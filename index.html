@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneCapital - Build Bitcoin's Future with OneCapital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-blob {
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
+            filter: blur(40px);
+            opacity: 0.8;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        /* Custom gradient text for "Financial System" */
+        .gradient-text {
+            background: linear-gradient(to right, #ff6b6b, #4ecdc4, #45b7d1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .announcement-banner {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-white text-black smooth-scroll">
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 w-full z-50 flex justify-center pt-6">
+        <nav class="relative flex items-center justify-between px-6 py-4 bg-white/40 backdrop-blur-xl rounded-full shadow-lg border border-white/20 max-w-4xl w-full">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <a href="/" class="text-xl font-bold text-black">OneCapital</a>
+            </div>
+            
+            <!-- Navigation Links (Desktop) -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-black font-medium hover:text-gray-600 transition-colors duration-300">Blog</a>
+                <div class="relative group">
+                    <button class="flex items-center text-black font-medium hover:text-gray-600 transition-colors duration-300">
+                        Testnet
+                        <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                </div>
+                <a href="#" class="text-black font-medium hover:text-gray-600 transition-colors duration-300">Docs</a>
+                <a href="#" class="text-black font-medium hover:text-gray-600 transition-colors duration-300">Careers</a>
+                <a href="#" class="bg-black text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition-colors duration-300">Start building</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-btn" class="text-black focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-lg py-4 z-40">
+            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Blog</a>
+            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Testnet</a>
+            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Docs</a>
+            <a href="#" class="block px-4 py-2 text-black hover:bg-gray-100">Careers</a>
+            <a href="#" class="block mx-4 mt-2 bg-black text-white px-4 py-2 rounded-full text-center">Start building</a>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+        <!-- Gradient Blob -->
+        <div class="absolute gradient-blob w-[800px] h-[600px] rounded-full" style="top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-6xl md:text-8xl font-extrabold leading-tight mb-8">
+                Bitcoin's Own <br>
+                Financial System
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-12 leading-relaxed max-w-3xl mx-auto">
+                Activating trillions in BTC for secure trading, borrowing, stablecoins, and more.
+            </p>
+            <a href="#" class="inline-block bg-black hover:bg-gray-800 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
+                Build on OneCapital
+            </a>
+        </div>
+    </section>
+
+    <!-- Social Links -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h5 class="text-gray-500 mb-4">Join us on</h5>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-black transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-black transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-black transition-colors duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-gray-500 mb-4">Ecosystem</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-black">
+                    Join the trailblazers
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Building the next generation of Bitcoin finance
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
+                <div class="text-center">
+                    <p class="text-gray-700 text-lg">Anchorage Digital</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-700 text-lg">Chaos Labs</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-700 text-lg">LayerZero</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-700 text-lg">Liquity</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-700 text-lg">Paxos</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-700 text-lg">Valantis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section class="py-20 bg-white relative overflow-hidden">
+        <!-- Abstract Background Shapes -->
+        <div class="absolute inset-0 opacity-30">
+            <div class="absolute top-20 left-10 w-32 h-32 rounded-full blur-3xl" style="background: #ff6b6b;"></div>
+            <div class="absolute top-40 right-20 w-40 h-40 rounded-full blur-3xl" style="background: #4ecdc4;"></div>
+            <div class="absolute bottom-20 left-1/3 w-36 h-36 rounded-full blur-3xl" style="background: #45b7d1;"></div>
+        </div>
+        
+        <!-- Large Gradient Blob behind cards -->
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-[800px] h-[600px] rounded-full blur-3xl opacity-20" style="background: linear-gradient(to right, #ff6b6b, #4ecdc4, #45b7d1);"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-gray-200 text-black px-4 py-2 rounded-full text-sm font-medium mb-6">
+                    Platform
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-black">
+                    Secure finance on Bitcoin
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Deploy BTC products with ease on OneCapital
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Feature 1: Free users from centralized BTC -->
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl card-hover shadow-lg border border-white/30">
+                    <h3 class="text-2xl font-bold mb-4 text-black">Free users from centralized BTC</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Apps on OneCapital free users from custodial BTC finance and honest-majority BTC bridges through OneCapital's novel <em class="text-blue-600">1-of-N Bitcoin bridge</em> that drastically improves safety.
+                    </p>
+                </div>
+                
+                <!-- Feature 2: Build any EVM app imaginable -->
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl card-hover shadow-lg border border-white/30">
+                    <h3 class="text-2xl font-bold mb-4 text-black">Build any EVM app imaginable</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        OneCapital opens the gates to all possible financial apps for BTC with an EVM-compatible environment. Innovate endlessly with support from the largest developer ecosystem in the industry.
+                    </p>
+                </div>
+                
+                <!-- Feature 3: Settle transactions directly on Bitcoin -->
+                <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl card-hover shadow-lg border border-white/30">
+                    <h3 class="text-2xl font-bold mb-4 text-black">Settle transactions directly on Bitcoin</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        OneCapital settles all of its financial transactions directly on Bitcoin through its unique ZK rollup with optimistic bridge architecture. All transactions on OneCapital inherit Bitcoin's double-spend security.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-black font-semibold text-xl hover:text-gray-600 transition-colors duration-300">
+                    Learn how OneCapital works
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributions Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <p class="text-gray-500 mb-4">Contributions</p>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-black">
+                    At the forefront of the movement
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Our contributions have made secure Bitcoin finance possible
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Architecture -->
+                <div class="bg-gray-50 p-8 rounded-xl card-hover">
+                    <h4 class="text-gray-500 mb-4">Architecture</h4>
+                    <a href="#" class="text-2xl font-bold mb-4 text-black hover:text-blue-600 transition-colors duration-300">
+                        Pioneered ZK Rollups on Bitcoin
+                    </a>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        "Published first technical designs for bitcoin rollups:" <a href="#" class="text-blue-600 hover:underline">Validity Rollups on Bitcoin</a>, <a href="#" class="text-blue-600 hover:underline">Bitcoin zk-rollups</a>, <a href="#" class="text-blue-600 hover:underline">ZK Rollup on Bitcoin</a>
+                    </p>
+                    <p class="text-gray-500 text-sm">John Light, Trey Del Bonis, others</p>
+                </div>
+                
+                <!-- Research -->
+                <div class="bg-gray-50 p-8 rounded-xl card-hover">
+                    <h4 class="text-gray-500 mb-4">Research</h4>
+                    <a href="#" class="text-2xl font-bold mb-4 text-black hover:text-blue-600 transition-colors duration-300">
+                        Invented Novel ZK Cryptography
+                    </a>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        "Contributed to breakthroughs in zero-knowledge research:" <a href="#" class="text-blue-600 hover:underline">On proving pairings</a>, <a href="#" class="text-blue-600 hover:underline">Shielded CSV</a>, <a href="#" class="text-blue-600 hover:underline">Protogalaxy</a>
+                    </p>
+                    <p class="text-gray-500 text-sm">Liam Eagen</p>
+                </div>
+                
+                <!-- Development -->
+                <div class="bg-gray-50 p-8 rounded-xl card-hover">
+                    <h4 class="text-gray-500 mb-4">Development</h4>
+                    <a href="#" class="text-2xl font-bold mb-4 text-black hover:text-blue-600 transition-colors duration-300">
+                        Developed 1-of-N Verifier for Bitcoin
+                    </a>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Contributed significantly to making 1-of-N verification on Bitcoin a reality through <a href="#" class="text-blue-600 hover:underline">optimistic-ZK verifiers</a>
+                    </p>
+                    <p class="text-gray-500 text-sm">Manish Bista, Aaron Feickert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-black">
+                Start exploring<br>
+                the OneCapital testnet
+            </h2>
+            <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                We're calling on entrepreneurs and visionaries who want to build Bitcoin's native financial ecosystem. Join our mailing list to stay updated.
+            </p>
+            <form class="max-w-md mx-auto">
+                <div class="flex gap-4">
+                    <input type="email" placeholder="Enter your Email" class="flex-1 px-4 py-3 rounded-lg bg-white text-black placeholder-gray-400 border border-gray-300 focus:border-blue-500 focus:outline-none">
+                    <button type="submit" class="bg-black hover:bg-gray-800 text-white px-6 py-3 rounded-lg transition-colors duration-300">
+                        Sign up
+                    </button>
+                </div>
+            </form>
+            <p class="text-sm text-gray-500 mt-4">
+                By submitting your email, you agree to our <a href="#" class="text-blue-600 hover:underline">terms</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <a href="/" class="text-2xl font-bold text-black">OneCapital</a>
+                </div>
+                
+                <!-- Navigation -->
+                <div>
+                    <h5 class="text-gray-500 mb-4">Navigation</h5>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-gray-600 hover:text-black transition-colors duration-300">Blog</a>
+                        <a href="#" class="block text-gray-600 hover:text-black transition-colors duration-300">Docs</a>
+                        <a href="#" class="block text-gray-600 hover:text-black transition-colors duration-300">Careers</a>
+                    </div>
+                </div>
+                
+                <!-- Info -->
+                <div>
+                    <h5 class="text-gray-500 mb-4">Info</h5>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-gray-600 hover:text-black transition-colors duration-300">Terms of Service</a>
+                        <a href="#" class="block text-gray-600 hover:text-black transition-colors duration-300">Privacy Policy</a>
+                        <a href="#" class="block text-gray-600 hover:text-black transition-colors duration-300">Media Kit</a>
+                    </div>
+                </div>
+                
+                <!-- Community -->
+                <div>
+                    <h5 class="text-gray-500 mb-4">Community</h5>
+                    <div class="space-y-2">
+                        <a href="#" class="block text-gray-600 hover:text-black transition-colors duration-300">X</a>
+                        <a href="#" class="block text-gray-600 hover:text-black transition-colors duration-300">Discord</a>
+                        <a href="#" class="block text-gray-600 hover:text-black transition-colors duration-300">Telegram</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 pt-8 text-center">
+                <p class="text-gray-500">© 2025 OneCapital Labs. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "alpen-labs-clone",
+  "version": "1.0.0",
+  "description": "Alpen Labs website clone",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server --port=3000 --open=/index.html",
+    "start": "npx live-server --port=3000"
+  },
+  "keywords": ["alpen", "labs", "bitcoin", "website", "clone"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
