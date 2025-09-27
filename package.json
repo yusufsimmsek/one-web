@@ -5,9 +5,7 @@
   "main": "index.html",
   "scripts": {
     "dev": "npx live-server --port=3000 --open=/index.html",
-    "start": "npx live-server --port=3000",
-    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css",
-    "watch-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "start": "npx live-server --port=3000"
   },
   "keywords": [
     "alpen",
